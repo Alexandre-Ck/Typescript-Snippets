@@ -1,20 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // Variables avec types
-var prenom = "Alex";
-var age = 25;
-var estActif = true;
+let prenom = "Alex";
+let age = 25;
+let estActif = true;
+let rien = null;
+
 // Tableaux
-var nombres = [1, 2, 3];
-var melange = [1, "deux", 3];
+let nombres = [1, 2, 3];
+let melange = [1, "deux", 3];
 // Objet typé
-var personne = {
+let personne = {
     nom: "Alexandre",
     age: 30
 };
 // Fonction typée
 function saluer(nom) {
-    return "Bonjour ".concat(nom, " !");
+    return `Bonjour ${nom} !`;
 }
+function donnerAge(age) {
+    console.log(`Vous avez ${age} ans.`);
+}
+console.log(donnerAge(age));
 console.log(saluer(prenom));
 console.log(nombres, melange, personne, estActif);
+//# sourceMappingURL=base.js.map

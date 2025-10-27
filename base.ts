@@ -4,6 +4,7 @@ export {}; // transforme le fichier en module pour éviter les conflits
 let prenom: string = "Alex";
 let age: number = 25;
 let estActif: boolean = true;
+let rien: null = null;
 
 // Tableaux
 let nombres: number[] = [1, 2, 3];
@@ -18,7 +19,12 @@ let personne: { nom: string; age: number } = {
 // Fonction typée
 function saluer(nom: string): string {
     return `Bonjour ${nom} !`;
+    
 }
 
+function donnerAge(age: number): void {
+    console.log(`Vous avez ${age} ans.`);
+}
+console.log(donnerAge(age));
 console.log(saluer(prenom));
 console.log(nombres, melange, personne, estActif);

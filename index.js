@@ -5,3 +5,4 @@ require("./fonctions");
 require("./interfaces");
 require("./classes");
 require("./generiques");
+//# sourceMappingURL=index.js.map
